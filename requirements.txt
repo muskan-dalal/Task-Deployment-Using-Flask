@@ -1,6 +1,5 @@
 numpy
 pandas
-pickle
 sklearn
 math
 scipy
