@@ -1,0 +1,9 @@
+numpy
+pandas
+pickle
+sklearn
+math
+scipy
+Flask
+joblib
+gunicorn
