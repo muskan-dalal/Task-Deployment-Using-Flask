@@ -17,7 +17,7 @@ with open(Filename, 'rb') as file:
 
 @app.route('/')
 def index():
-    return flask.render_template('index.html')
+    return render_template('index.html')
 
 
 @app.route('/predict', methods=['POST', 'GET'])
