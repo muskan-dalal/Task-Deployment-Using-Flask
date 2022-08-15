@@ -3,6 +3,7 @@ import pandas as pd
 import math
 from mlxtend.preprocessing import minmax_scaling
 from scipy import stats as st
+import gunicorn
 
 
 df = pd.read_csv("prosperLoanData.csv")
