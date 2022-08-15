@@ -34,13 +34,13 @@ def predict_logic():
     pred_name = model.predict([[LP_CustomerPrincipalPayments, LP_CustomerPayments, DebtToIncomeRatio,
                                 StatedMonthlyIncome, LP_GrossPrincipalLoss, LoanOriginalAmount,
                                 MonthlyLoanPayment]]).tolist()[0]
-    yes = "Congrats!! You can have a loan"
-    no = "I'm so sorry but you can't have a loan for now"
+    approved = "Congratulations! Your loan has been approved."
+    not_approved = "Sorry, you cannot get a loan."
     result = ''
     if pred_name == '0':
-        result = yes
+        result = approved
     else:
-        result = no
+        result = not_approved
     return render_template('predict.html', pred_name=pred_name, prediction=result)
 
 
